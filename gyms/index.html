@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBHASH Fitness</title>
+    <link rel="stylesheet" href="gym.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        /* CSS RESET */
+        body {
+            margin: 0;
+            padding: 0;
+            /* background: url('viratfit.jpg') no-repeat center center fixed; */
+            /* background-size: cover; */
+        }
+
+        .left img {
+            width: 75px;
+            filter: invert(90%);
+        }
+
+        .navbar {
+            font-size: 18px;
+            background-color: aqua;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-nav li {
+            margin: 0 15px;
+        }
+
+        .navbar-nav li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li a.active {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+        .btn {
+            margin: 5px;
+            /* background-color: aqua; */
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .container {
+            border: 3px solid rgb(45, 101, 111);
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: bisque;
+            border-radius: 19px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+            float: left;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .container-fluid{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img  src="gymlogo.jpg" alt="Logo" height="70px"> <!-- Replace with your logo path -->
+                <div style="font-size: 15px;"> SM Fitness</div>
+            </a>
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="candidate_login.html">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vote.html">Fitness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="HOME" class="container">
+        <h2 class="section-title">Fitness Tips</h2>
+        <p>Here are some essential fitness tips to keep in mind:</p>
+        <ul>
+            <li>Start with a warm-up before exercising.</li>
+            <li>Drink plenty of water and consume the right amount of protein, carbs, and fats.</li>
+            <li>Rest and recovery are just as important as workouts.</li>
+            <li>Consistency is key to achieving your fitness goals.</li>
+            <li>Exercise reguraly.</li>
+        </ul>
+        <img src="body.jpg" alt="Fitness Tips" class="img-fluid">
+    </section>
+
+    <!-- Fitness Section (BMI Calculator) -->
+    <section id="FITNESS" class="container">
+        <h2 class="section-title">BMI Calculator</h2>
+        <p>Calculate your Body Mass Index (BMI) to understand your weight category.</p>
+        <form id="bmi-form">
+            <div class="mb-3">
+                <label for="weight" class="form-label">Weight (kg):</label>
+                <input type="number" class="form-control" id="weight" name="weight" required>
+            </div>
+            <div class="mb-3">
+                <label for="height" class="form-label">Height (cm):</label>
+                <input type="number" class="form-control" id="height" name="height" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateBMI()">Calculate</button>
+        </form>
+        <p id="bmi-result"></p>
+        <background-img src="viratfit.jpg"></background-img>
+    </section>
+
+    <!-- Workout Video Section -->
+    <section id="video" class="container">
+        <h2 class="section-title">🏋️Workout🏋️</h2>
+        <img src="viratfit.jpg" alt="viratfit" width="300" height="300">
+        <img src="ritik.jpg" alt="hritikk body" width="300 height=250">
+        
+        <h5> Regular exercise can change your body.</h5>
+    </section>
+
+    <script src="1.js"></script>
+</body>
+
+</html>
